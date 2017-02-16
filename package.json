@@ -2,8 +2,9 @@
   "name": "user-auth-project",
   "version": "1.0.0",
   "description": "A project for learn about user authentication",
-  "main": "app.js",
+  "main": "app/app.js",
   "scripts": {
+    "start": "nodemon -e css,ejs,js,json --watch app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ramiro Pinol",
@@ -17,12 +18,16 @@
     "express": "^4.14.1",
     "express-session": "^1.15.1",
     "method-override": "^1.0.0",
-    "mongoose": "^3.9.7",
+    "mongoose": "^4.8",
     "morgan": "^1.8.1",
     "passport": "^0.1.17",
     "passport-facebook": "^1.0.2",
     "passport-google-oauth": "^0.1.5",
     "passport-local": "^0.1.6",
     "passport-twitter": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "reload": "^1.1.1"
   }
 }
